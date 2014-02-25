@@ -14,20 +14,12 @@
 		9649457E18BCF1DA00EDE08B /* plist.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649457718BCF1DA00EDE08B /* plist.c */; };
 		9649457F18BCF1DA00EDE08B /* ptrarray.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649457818BCF1DA00EDE08B /* ptrarray.c */; };
 		9649458018BCF1DA00EDE08B /* xplist.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649457918BCF1DA00EDE08B /* xplist.c */; };
-		9649458718BCF20400EDE08B /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 9649458118BCF20400EDE08B /* base64.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		9649458818BCF20400EDE08B /* bytearray.h in Headers */ = {isa = PBXBuildFile; fileRef = 9649458218BCF20400EDE08B /* bytearray.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		9649458A18BCF20400EDE08B /* hashtable.h in Headers */ = {isa = PBXBuildFile; fileRef = 9649458418BCF20400EDE08B /* hashtable.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9649458B18BCF20400EDE08B /* plist.h in Headers */ = {isa = PBXBuildFile; fileRef = 9649458518BCF20400EDE08B /* plist.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		9649458C18BCF20400EDE08B /* ptrarray.h in Headers */ = {isa = PBXBuildFile; fileRef = 9649458618BCF20400EDE08B /* ptrarray.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9649459418BCF24400EDE08B /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649458F18BCF24400EDE08B /* iterator.c */; };
 		9649459518BCF24400EDE08B /* node_iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649459018BCF24400EDE08B /* node_iterator.c */; };
 		9649459618BCF24400EDE08B /* node_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649459118BCF24400EDE08B /* node_list.c */; };
 		9649459718BCF24400EDE08B /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649459218BCF24400EDE08B /* node.c */; };
-		964945A718BD08A000EDE08B /* bytearray.h in Headers */ = {isa = PBXBuildFile; fileRef = 9649458218BCF20400EDE08B /* bytearray.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		964945A818BD08A000EDE08B /* ptrarray.h in Headers */ = {isa = PBXBuildFile; fileRef = 9649458618BCF20400EDE08B /* ptrarray.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		964945A918BD08A000EDE08B /* plist.h in Headers */ = {isa = PBXBuildFile; fileRef = 9649458518BCF20400EDE08B /* plist.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		964945AA18BD08A000EDE08B /* hashtable.h in Headers */ = {isa = PBXBuildFile; fileRef = 9649458418BCF20400EDE08B /* hashtable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		964945AB18BD08A000EDE08B /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 9649458118BCF20400EDE08B /* base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		964945AD18BD08A000EDE08B /* ptrarray.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649457818BCF1DA00EDE08B /* ptrarray.c */; };
 		964945AE18BD08A000EDE08B /* node_iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649459018BCF24400EDE08B /* node_iterator.c */; };
 		964945AF18BD08A000EDE08B /* hashtable.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649457618BCF1DA00EDE08B /* hashtable.c */; };
@@ -175,11 +167,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9649458818BCF20400EDE08B /* bytearray.h in Headers */,
-				9649458C18BCF20400EDE08B /* ptrarray.h in Headers */,
 				9649458B18BCF20400EDE08B /* plist.h in Headers */,
-				9649458A18BCF20400EDE08B /* hashtable.h in Headers */,
-				9649458718BCF20400EDE08B /* base64.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,11 +175,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				964945A718BD08A000EDE08B /* bytearray.h in Headers */,
-				964945A818BD08A000EDE08B /* ptrarray.h in Headers */,
 				964945A918BD08A000EDE08B /* plist.h in Headers */,
-				964945AA18BD08A000EDE08B /* hashtable.h in Headers */,
-				964945AB18BD08A000EDE08B /* base64.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
