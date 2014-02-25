@@ -14,12 +14,10 @@
 		9649457E18BCF1DA00EDE08B /* plist.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649457718BCF1DA00EDE08B /* plist.c */; };
 		9649457F18BCF1DA00EDE08B /* ptrarray.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649457818BCF1DA00EDE08B /* ptrarray.c */; };
 		9649458018BCF1DA00EDE08B /* xplist.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649457918BCF1DA00EDE08B /* xplist.c */; };
-		9649458B18BCF20400EDE08B /* plist.h in Headers */ = {isa = PBXBuildFile; fileRef = 9649458518BCF20400EDE08B /* plist.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9649459418BCF24400EDE08B /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649458F18BCF24400EDE08B /* iterator.c */; };
 		9649459518BCF24400EDE08B /* node_iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649459018BCF24400EDE08B /* node_iterator.c */; };
 		9649459618BCF24400EDE08B /* node_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649459118BCF24400EDE08B /* node_list.c */; };
 		9649459718BCF24400EDE08B /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649459218BCF24400EDE08B /* node.c */; };
-		964945A918BD08A000EDE08B /* plist.h in Headers */ = {isa = PBXBuildFile; fileRef = 9649458518BCF20400EDE08B /* plist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		964945AD18BD08A000EDE08B /* ptrarray.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649457818BCF1DA00EDE08B /* ptrarray.c */; };
 		964945AE18BD08A000EDE08B /* node_iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649459018BCF24400EDE08B /* node_iterator.c */; };
 		964945AF18BD08A000EDE08B /* hashtable.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649457618BCF1DA00EDE08B /* hashtable.c */; };
@@ -34,6 +32,8 @@
 		964945BE18BD0C5700EDE08B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 964945BD18BD0C5700EDE08B /* libxml2.dylib */; };
 		964945C018BD0CBE00EDE08B /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = 964945BF18BD0CBE00EDE08B /* list.c */; };
 		964945C118BD0CBE00EDE08B /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = 964945BF18BD0CBE00EDE08B /* list.c */; };
+		96519CF618BD2EB8009DEBFD /* plist.h in Headers */ = {isa = PBXBuildFile; fileRef = 96519CF518BD2EA0009DEBFD /* plist.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		96519CF718BD2EC4009DEBFD /* plist.h in Headers */ = {isa = PBXBuildFile; fileRef = 96519CF518BD2EA0009DEBFD /* plist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +65,7 @@
 		964945BC18BD08A000EDE08B /* libplist.dylib */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libplist.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		964945BD18BD0C5700EDE08B /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		964945BF18BD0CBE00EDE08B /* list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = list.c; path = libcnary/list.c; sourceTree = "<group>"; };
+		96519CF518BD2EA0009DEBFD /* plist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = plist.h; path = include/plist/plist.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,7 @@
 		9649456818BCF18C00EDE08B /* include */ = {
 			isa = PBXGroup;
 			children = (
+				96519CF418BD2E81009DEBFD /* plist */,
 				9649458318BCF20400EDE08B /* common.h */,
 				9649458118BCF20400EDE08B /* base64.h */,
 				9649458218BCF20400EDE08B /* bytearray.h */,
@@ -160,6 +162,14 @@
 			name = include;
 			sourceTree = "<group>";
 		};
+		96519CF418BD2E81009DEBFD /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				96519CF518BD2EA0009DEBFD /* plist.h */,
+			);
+			name = plist;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -167,7 +177,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9649458B18BCF20400EDE08B /* plist.h in Headers */,
+				96519CF618BD2EB8009DEBFD /* plist.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +185,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				964945A918BD08A000EDE08B /* plist.h in Headers */,
+				96519CF718BD2EC4009DEBFD /* plist.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
