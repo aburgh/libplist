@@ -25,6 +25,7 @@
 #include "plist/plist.h"
 #include "common.h"
 
+#include <stdint.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <sys/time.h>
