@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9602A1D218C1F324002FD8C5 /* plist.h in Headers */ = {isa = PBXBuildFile; fileRef = 96519CF518BD2EA0009DEBFD /* plist.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9602A1D418C1F324002FD8C5 /* ptrarray.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649457818BCF1DA00EDE08B /* ptrarray.c */; };
 		9602A1D518C1F324002FD8C5 /* node_iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649459018BCF24400EDE08B /* node_iterator.c */; };
 		9602A1D618C1F324002FD8C5 /* hashtable.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649457618BCF1DA00EDE08B /* hashtable.c */; };
@@ -58,31 +57,18 @@
 		9602A21C18C1F5BA002FD8C5 /* Structure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9602A20518C1F5BA002FD8C5 /* Structure.cpp */; };
 		9602A21D18C1F5BA002FD8C5 /* Uid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9602A20618C1F5BA002FD8C5 /* Uid.cpp */; };
 		9602A21E18C1F5BA002FD8C5 /* Uid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9602A20618C1F5BA002FD8C5 /* Uid.cpp */; };
-		9602A22C18C1F85F002FD8C5 /* Array.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A21F18C1F85F002FD8C5 /* Array.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9602A22D18C1F85F002FD8C5 /* Array.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A21F18C1F85F002FD8C5 /* Array.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9602A22E18C1F85F002FD8C5 /* Boolean.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22018C1F85F002FD8C5 /* Boolean.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9602A22F18C1F85F002FD8C5 /* Boolean.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22018C1F85F002FD8C5 /* Boolean.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9602A23018C1F85F002FD8C5 /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22118C1F85F002FD8C5 /* Data.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9602A23118C1F85F002FD8C5 /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22118C1F85F002FD8C5 /* Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9602A23218C1F85F002FD8C5 /* Date.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22218C1F85F002FD8C5 /* Date.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9602A23318C1F85F002FD8C5 /* Date.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22218C1F85F002FD8C5 /* Date.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9602A23418C1F85F002FD8C5 /* Dictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22318C1F85F002FD8C5 /* Dictionary.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9602A23518C1F85F002FD8C5 /* Dictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22318C1F85F002FD8C5 /* Dictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9602A23618C1F85F002FD8C5 /* Integer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22418C1F85F002FD8C5 /* Integer.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9602A23718C1F85F002FD8C5 /* Integer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22418C1F85F002FD8C5 /* Integer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9602A23818C1F85F002FD8C5 /* Key.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22518C1F85F002FD8C5 /* Key.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9602A23918C1F85F002FD8C5 /* Key.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22518C1F85F002FD8C5 /* Key.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9602A23A18C1F85F002FD8C5 /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22618C1F85F002FD8C5 /* Node.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9602A23B18C1F85F002FD8C5 /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22618C1F85F002FD8C5 /* Node.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9602A23C18C1F85F002FD8C5 /* plist++.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22718C1F85F002FD8C5 /* plist++.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9602A23D18C1F85F002FD8C5 /* plist++.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22718C1F85F002FD8C5 /* plist++.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9602A23E18C1F85F002FD8C5 /* Real.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22818C1F85F002FD8C5 /* Real.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9602A23F18C1F85F002FD8C5 /* Real.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22818C1F85F002FD8C5 /* Real.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9602A24018C1F85F002FD8C5 /* String.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22918C1F85F002FD8C5 /* String.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9602A24118C1F85F002FD8C5 /* String.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22918C1F85F002FD8C5 /* String.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9602A24218C1F85F002FD8C5 /* Structure.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22A18C1F85F002FD8C5 /* Structure.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9602A24318C1F85F002FD8C5 /* Structure.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22A18C1F85F002FD8C5 /* Structure.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9602A24418C1F85F002FD8C5 /* Uid.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22B18C1F85F002FD8C5 /* Uid.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9602A24518C1F85F002FD8C5 /* Uid.h in Headers */ = {isa = PBXBuildFile; fileRef = 9602A22B18C1F85F002FD8C5 /* Uid.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9649457A18BCF1DA00EDE08B /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649457318BCF1DA00EDE08B /* base64.c */; };
 		9649457B18BCF1DA00EDE08B /* bplist.c in Sources */ = {isa = PBXBuildFile; fileRef = 9649457418BCF1DA00EDE08B /* bplist.c */; };
@@ -109,9 +95,61 @@
 		964945BE18BD0C5700EDE08B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 964945BD18BD0C5700EDE08B /* libxml2.dylib */; };
 		964945C018BD0CBE00EDE08B /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = 964945BF18BD0CBE00EDE08B /* list.c */; };
 		964945C118BD0CBE00EDE08B /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = 964945BF18BD0CBE00EDE08B /* list.c */; };
-		96519CF618BD2EB8009DEBFD /* plist.h in Headers */ = {isa = PBXBuildFile; fileRef = 96519CF518BD2EA0009DEBFD /* plist.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		96519CF718BD2EC4009DEBFD /* plist.h in Headers */ = {isa = PBXBuildFile; fileRef = 96519CF518BD2EA0009DEBFD /* plist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9686308118F70FF300C0363C /* plist.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 96519CF518BD2EA0009DEBFD /* plist.h */; };
+		9686308318F7105500C0363C /* plist.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 96519CF518BD2EA0009DEBFD /* plist.h */; };
+		9686308418F7105500C0363C /* plist++.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22718C1F85F002FD8C5 /* plist++.h */; };
+		9686308518F7105500C0363C /* Array.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A21F18C1F85F002FD8C5 /* Array.h */; };
+		9686308618F7105500C0363C /* Boolean.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22018C1F85F002FD8C5 /* Boolean.h */; };
+		9686308718F7105500C0363C /* Data.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22118C1F85F002FD8C5 /* Data.h */; };
+		9686308818F7105500C0363C /* Date.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22218C1F85F002FD8C5 /* Date.h */; };
+		9686308918F7105500C0363C /* Dictionary.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22318C1F85F002FD8C5 /* Dictionary.h */; };
+		9686308A18F7105500C0363C /* Integer.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22418C1F85F002FD8C5 /* Integer.h */; };
+		9686308B18F7105500C0363C /* Key.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22518C1F85F002FD8C5 /* Key.h */; };
+		9686308C18F7105500C0363C /* Node.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22618C1F85F002FD8C5 /* Node.h */; };
+		9686308D18F7105500C0363C /* Real.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22818C1F85F002FD8C5 /* Real.h */; };
+		9686308E18F7105500C0363C /* String.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22918C1F85F002FD8C5 /* String.h */; };
+		9686308F18F7105500C0363C /* Structure.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22A18C1F85F002FD8C5 /* Structure.h */; };
+		9686309018F7105500C0363C /* Uid.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22B18C1F85F002FD8C5 /* Uid.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9686308018F70FB400C0363C /* Copy Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/plist;
+			dstSubfolderSpec = 16;
+			files = (
+				9686308118F70FF300C0363C /* plist.h in Copy Headers */,
+			);
+			name = "Copy Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9686308218F7101F00C0363C /* Copy Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/plist;
+			dstSubfolderSpec = 16;
+			files = (
+				9686308318F7105500C0363C /* plist.h in Copy Headers */,
+				9686308418F7105500C0363C /* plist++.h in Copy Headers */,
+				9686308518F7105500C0363C /* Array.h in Copy Headers */,
+				9686308618F7105500C0363C /* Boolean.h in Copy Headers */,
+				9686308718F7105500C0363C /* Data.h in Copy Headers */,
+				9686308818F7105500C0363C /* Date.h in Copy Headers */,
+				9686308918F7105500C0363C /* Dictionary.h in Copy Headers */,
+				9686308A18F7105500C0363C /* Integer.h in Copy Headers */,
+				9686308B18F7105500C0363C /* Key.h in Copy Headers */,
+				9686308C18F7105500C0363C /* Node.h in Copy Headers */,
+				9686308D18F7105500C0363C /* Real.h in Copy Headers */,
+				9686308E18F7105500C0363C /* String.h in Copy Headers */,
+				9686308F18F7105500C0363C /* Structure.h in Copy Headers */,
+				9686309018F7105500C0363C /* Uid.h in Copy Headers */,
+			);
+			name = "Copy Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9602A1E418C1F324002FD8C5 /* libplist++.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libplist++.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -327,27 +365,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9602A1D118C1F324002FD8C5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9602A1D218C1F324002FD8C5 /* plist.h in Headers */,
-				9602A23C18C1F85F002FD8C5 /* plist++.h in Headers */,
-				9602A23218C1F85F002FD8C5 /* Date.h in Headers */,
-				9602A23E18C1F85F002FD8C5 /* Real.h in Headers */,
-				9602A24218C1F85F002FD8C5 /* Structure.h in Headers */,
-				9602A22E18C1F85F002FD8C5 /* Boolean.h in Headers */,
-				9602A23418C1F85F002FD8C5 /* Dictionary.h in Headers */,
-				9602A24018C1F85F002FD8C5 /* String.h in Headers */,
-				9602A24418C1F85F002FD8C5 /* Uid.h in Headers */,
-				9602A23618C1F85F002FD8C5 /* Integer.h in Headers */,
-				9602A23A18C1F85F002FD8C5 /* Node.h in Headers */,
-				9602A23818C1F85F002FD8C5 /* Key.h in Headers */,
-				9602A22C18C1F85F002FD8C5 /* Array.h in Headers */,
-				9602A23018C1F85F002FD8C5 /* Data.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9602A1E618C1F388002FD8C5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,14 +386,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9649456C18BCF1C900EDE08B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				96519CF618BD2EB8009DEBFD /* plist.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		964945A618BD08A000EDE08B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,7 +401,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9602A1E118C1F324002FD8C5 /* Build configuration list for PBXNativeTarget "libplist++-static" */;
 			buildPhases = (
-				9602A1D118C1F324002FD8C5 /* Headers */,
+				9686308218F7101F00C0363C /* Copy Headers */,
 				9602A1D318C1F324002FD8C5 /* Sources */,
 				9602A1E018C1F324002FD8C5 /* Frameworks */,
 			);
@@ -426,8 +435,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9649457018BCF1C900EDE08B /* Build configuration list for PBXNativeTarget "libplist-static" */;
 			buildPhases = (
-				9629594018BE61A90021A1C2 /* Print Environment */,
-				9649456C18BCF1C900EDE08B /* Headers */,
+				9686308018F70FB400C0363C /* Copy Headers */,
 				9649456A18BCF1C900EDE08B /* Sources */,
 				9649456B18BCF1C900EDE08B /* Frameworks */,
 			);
@@ -484,23 +492,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		9629594018BE61A90021A1C2 /* Print Environment */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Print Environment";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9602A1D318C1F324002FD8C5 /* Sources */ = {
