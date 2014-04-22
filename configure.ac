@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.61)
-AC_INIT(libplist, 1.11, nospam@nowhere.com)
+AC_INIT(libplist, 1.12, nospam@nowhere.com)
 AM_INIT_AUTOMAKE([dist-bzip2 no-dist-gzip])
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES])
 AC_CONFIG_SRCDIR([src/])
@@ -48,17 +48,10 @@ AC_TYPE_UINT8_T
 # Checks for library functions.
 AC_CHECK_FUNCS([asprintf strcasecmp strdup strerror strndup stpcpy vasprintf])
 
-AC_CHECK_HEADER(endian.h, [ac_cv_have_endian_h="yes"], [ac_cv_have_endian_h="no"])
-if test "x$ac_cv_have_endian_h" = "xno"; then
-  AC_DEFINE(__LITTLE_ENDIAN,1234,[little endian])
-  AC_DEFINE(__BIG_ENDIAN,4321,[big endian])
-  AC_C_BIGENDIAN([ac_cv_c_bigendian="yes"], [ac_cv_c_bigendian="no"], [], [])
-  if test "x$ac_cv_c_bigendian" = "xyes"; then
-    AC_DEFINE(__BYTE_ORDER,4321,[big endian byte order])
-  else
-    AC_DEFINE(__BYTE_ORDER,1234,[little endian byte order])
-  fi
-fi
+# Checking endianness
+AC_C_BIGENDIAN([AC_DEFINE([__BIG_ENDIAN__], [1], [big endian])],
+               [AC_DEFINE([__LITTLE_ENDIAN__], [1], [little endian])])
+
 
 # Check for operating system
 AC_MSG_CHECKING([whether to enable WIN32 build settings])
