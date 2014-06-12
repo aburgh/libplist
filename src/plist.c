@@ -70,7 +70,7 @@ static void plist_free_data(plist_data_t data)
 static int plist_free_node(node_t* node)
 {
     plist_data_t data = NULL;
-    int index = node_detach(node->parent, node);
+    int node_index = node_detach(node->parent, node);
     data = plist_get_data(node);
     plist_free_data(data);
     node->data = NULL;
@@ -84,7 +84,7 @@ static int plist_free_node(node_t* node)
 
     node_destroy(node);
 
-    return index;
+    return node_index;
 }
 
 plist_t plist_new_dict(void)
@@ -754,36 +754,6 @@ static void plist_set_element_val(plist_t node, plist_type type, const void *val
     case PLIST_DICT:
     default:
         break;
-    }
-}
-
-void plist_set_type(plist_t node, plist_type type)
-{
-    if ( node_n_children(node) == 0 )
-    {
-        plist_data_t data = plist_get_data(node);
-        plist_free_data( data );
-        data = plist_new_plist_data();
-        data->type = type;
-        switch (type)
-        {
-        case PLIST_BOOLEAN:
-            data->length = sizeof(uint8_t);
-            break;
-        case PLIST_UINT:
-        case PLIST_UID:
-            data->length = sizeof(uint64_t);
-            break;
-        case PLIST_REAL:
-            data->length = sizeof(double);
-            break;
-        case PLIST_DATE:
-            data->length = sizeof(struct timeval);
-            break;
-        default:
-            data->length = 0;
-            break;
-        }
     }
 }
 

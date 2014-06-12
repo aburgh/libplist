@@ -51,6 +51,8 @@
 #define XPLIST_ARRAY	BAD_CAST("array")
 #define XPLIST_DICT	BAD_CAST("dict")
 
+#define MAC_EPOCH 978307200
+
 static const char *plist_base = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\
 <!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n\
 <plist version=\"1.0\">\n\
@@ -136,11 +138,11 @@ static struct node_t* new_key_node(const char* name)
     return node_create(NULL, data);
 }
 
-static struct node_t* new_uint_node(uint64_t uint)
+static struct node_t* new_uint_node(uint64_t value)
 {
     plist_data_t data = plist_new_plist_data();
     data->type = PLIST_UINT;
-    data->intval = uint;
+    data->intval = value;
     data->length = sizeof(uint64_t);
     return node_create(NULL, data);
 }
@@ -182,7 +184,11 @@ static void node_to_xml(node_t* node, void *xml_struct)
     case PLIST_UINT:
         tag = XPLIST_INT;
         val = (char*)malloc(64);
-        (void)snprintf(val, 64, "%"PRIu64, node_data->intval);
+        if (node_data->length == 16) {
+	        (void)snprintf(val, 64, "%"PRIu64, node_data->intval);
+	} else {
+	        (void)snprintf(val, 64, "%"PRIi64, node_data->intval);
+	}
         break;
 
     case PLIST_REAL:
@@ -193,7 +199,7 @@ static void node_to_xml(node_t* node, void *xml_struct)
 
     case PLIST_STRING:
         tag = XPLIST_STRING;
-        val = strdup(node_data->strval);
+        val = strdup((char*) node_data->strval);
         break;
 
     case PLIST_KEY:
@@ -222,8 +228,8 @@ static void node_to_xml(node_t* node, void *xml_struct)
     case PLIST_DATE:
         tag = XPLIST_DATE;
         {
-            time_t time = (time_t)node_data->timeval.tv_sec;
-            struct tm *btime = gmtime(&time);
+            time_t timev = (time_t)node_data->timeval.tv_sec + MAC_EPOCH;
+            struct tm *btime = gmtime(&timev);
             if (btime) {
                 val = (char*)malloc(24);
                 memset(val, 0, 24);
@@ -251,7 +257,7 @@ static void node_to_xml(node_t* node, void *xml_struct)
     {
         xmlNodeAddContent(xstruct->xml, BAD_CAST("\t"));
     }
-    if (node_data->type == PLIST_STRING) {
+    if (node_data->type == PLIST_STRING || node_data->type == PLIST_KEY) {
         /* make sure we convert the following predefined xml entities */
         /* < = &lt; > = &gt; ' = &apos; " = &quot; & = &amp; */
         child_node = xmlNewTextChild(xstruct->xml, NULL, tag, BAD_CAST(val));
@@ -321,7 +327,7 @@ static void parse_date(const char *strval, struct tm *btime)
     btime->tm_year-=1900;
     btime->tm_mon--;
 #endif
-    btime->tm_isdst=-1;
+    btime->tm_isdst=0;
 }
 
 static void xml_to_node(xmlNodePtr xml_node, plist_t * plist_node)
@@ -375,9 +381,30 @@ static void xml_to_node(xmlNodePtr xml_node, plist_t * plist_node)
         if (!xmlStrcmp(node->name, XPLIST_INT))
         {
             xmlChar *strval = xmlNodeGetContent(node);
-            data->intval = strtoull((char*)strval, NULL, 0);
+            int is_negative = 0;
+            char *str = (char*)strval;
+            if ((str[0] == '-') || (str[0] == '+')) {
+                if (str[0] == '-') {
+                    is_negative = 1;
+                }
+                str++;
+            }
+            char* endp = NULL;
+            data->intval = strtoull((char*)str, &endp, 0);
+            if ((endp != NULL) && (strlen(endp) > 0)) {
+                fprintf(stderr, "%s: integer parse error: string contains invalid characters: '%s'\n", __func__, endp);
+            }
+            if (is_negative || (data->intval <= INT64_MAX)) {
+                int64_t v = data->intval;
+                if (is_negative) {
+                    v = -v;
+                }
+                data->intval = (uint64_t)v;
+                data->length = 8;
+            } else {
+                data->length = 16;
+            }
             data->type = PLIST_UINT;
-            data->length = 8;
             xmlFree(strval);
             continue;
         }
@@ -395,16 +422,16 @@ static void xml_to_node(xmlNodePtr xml_node, plist_t * plist_node)
         if (!xmlStrcmp(node->name, XPLIST_DATE))
         {
             xmlChar *strval = xmlNodeGetContent(node);
-            time_t time = 0;
+            time_t timev = 0;
             if (strlen((const char*)strval) >= 11) {
                 struct tm btime;
                 struct tm* tm_utc;
                 parse_date((const char*)strval, &btime);
-                time = mktime(&btime);
-                tm_utc = gmtime(&time);
-                time -= (mktime(tm_utc) - time);
+                timev = mktime(&btime);
+                tm_utc = gmtime(&timev);
+                timev -= (mktime(tm_utc) - timev);
             }
-            data->timeval.tv_sec = (long)time;
+            data->timeval.tv_sec = (long)(timev - MAC_EPOCH);
             data->timeval.tv_usec = 0;
             data->type = PLIST_DATE;
             data->length = sizeof(struct timeval);
@@ -431,9 +458,15 @@ static void xml_to_node(xmlNodePtr xml_node, plist_t * plist_node)
         if (!xmlStrcmp(node->name, XPLIST_KEY))
         {
             xmlChar *strval = xmlNodeGetContent(node);
-            data->strval = strdup((char *) strval);
-            data->type = PLIST_KEY;
-            data->length = strlen(data->strval);
+            len = strlen((char *) strval);
+            type = xmlDetectCharEncoding(strval, len);
+
+            if (XML_CHAR_ENCODING_UTF8 == type || XML_CHAR_ENCODING_ASCII == type || XML_CHAR_ENCODING_NONE == type)
+            {
+                data->strval = strdup((char *) strval);
+                data->type = PLIST_KEY;
+                data->length = strlen(data->strval);
+            }
             xmlFree(strval);
             continue;
         }
