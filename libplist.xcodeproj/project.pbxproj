@@ -96,21 +96,21 @@
 		9686308E18F7105500C0363C /* String.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22918C1F85F002FD8C5 /* String.h */; };
 		9686308F18F7105500C0363C /* Structure.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22A18C1F85F002FD8C5 /* Structure.h */; };
 		9686309018F7105500C0363C /* Uid.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22B18C1F85F002FD8C5 /* Uid.h */; };
-		96FB729B1906B97100E8E06C /* plist.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 96519CF518BD2EA0009DEBFD /* plist.h */; };
-		96FB729D1906B9BF00E8E06C /* plist.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 96519CF518BD2EA0009DEBFD /* plist.h */; };
-		96FB729E1906B9BF00E8E06C /* plist++.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22718C1F85F002FD8C5 /* plist++.h */; };
-		96FB729F1906B9BF00E8E06C /* Array.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A21F18C1F85F002FD8C5 /* Array.h */; };
-		96FB72A01906B9BF00E8E06C /* Boolean.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22018C1F85F002FD8C5 /* Boolean.h */; };
-		96FB72A11906B9BF00E8E06C /* Data.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22118C1F85F002FD8C5 /* Data.h */; };
-		96FB72A21906B9BF00E8E06C /* Date.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22218C1F85F002FD8C5 /* Date.h */; };
-		96FB72A31906B9BF00E8E06C /* Dictionary.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22318C1F85F002FD8C5 /* Dictionary.h */; };
-		96FB72A41906B9BF00E8E06C /* Integer.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22418C1F85F002FD8C5 /* Integer.h */; };
-		96FB72A51906B9BF00E8E06C /* Key.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22518C1F85F002FD8C5 /* Key.h */; };
-		96FB72A61906B9BF00E8E06C /* Node.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22618C1F85F002FD8C5 /* Node.h */; };
-		96FB72A71906B9BF00E8E06C /* Real.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22818C1F85F002FD8C5 /* Real.h */; };
-		96FB72A81906B9BF00E8E06C /* String.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22918C1F85F002FD8C5 /* String.h */; };
-		96FB72A91906B9BF00E8E06C /* Structure.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22A18C1F85F002FD8C5 /* Structure.h */; };
-		96FB72AA1906B9BF00E8E06C /* Uid.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22B18C1F85F002FD8C5 /* Uid.h */; };
+		96FB729B1906B97100E8E06C /* plist.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 96519CF518BD2EA0009DEBFD /* plist.h */; };
+		96FB729D1906B9BF00E8E06C /* plist.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 96519CF518BD2EA0009DEBFD /* plist.h */; };
+		96FB729E1906B9BF00E8E06C /* plist++.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 9602A22718C1F85F002FD8C5 /* plist++.h */; };
+		96FB729F1906B9BF00E8E06C /* Array.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 9602A21F18C1F85F002FD8C5 /* Array.h */; };
+		96FB72A01906B9BF00E8E06C /* Boolean.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 9602A22018C1F85F002FD8C5 /* Boolean.h */; };
+		96FB72A11906B9BF00E8E06C /* Data.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 9602A22118C1F85F002FD8C5 /* Data.h */; };
+		96FB72A21906B9BF00E8E06C /* Date.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 9602A22218C1F85F002FD8C5 /* Date.h */; };
+		96FB72A31906B9BF00E8E06C /* Dictionary.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 9602A22318C1F85F002FD8C5 /* Dictionary.h */; };
+		96FB72A41906B9BF00E8E06C /* Integer.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 9602A22418C1F85F002FD8C5 /* Integer.h */; };
+		96FB72A51906B9BF00E8E06C /* Key.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 9602A22518C1F85F002FD8C5 /* Key.h */; };
+		96FB72A61906B9BF00E8E06C /* Node.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 9602A22618C1F85F002FD8C5 /* Node.h */; };
+		96FB72A71906B9BF00E8E06C /* Real.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 9602A22818C1F85F002FD8C5 /* Real.h */; };
+		96FB72A81906B9BF00E8E06C /* String.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 9602A22918C1F85F002FD8C5 /* String.h */; };
+		96FB72A91906B9BF00E8E06C /* Structure.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 9602A22A18C1F85F002FD8C5 /* Structure.h */; };
+		96FB72AA1906B9BF00E8E06C /* Uid.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 9602A22B18C1F85F002FD8C5 /* Uid.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -149,40 +149,40 @@
 			name = "Copy Headers";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		96FB729A1906B94F00E8E06C /* Copy Headers */ = {
+		96FB729A1906B94F00E8E06C /* Install Headers */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = include/plist;
-			dstSubfolderSpec = 16;
+			buildActionMask = 8;
+			dstPath = /usr/local/include/plist;
+			dstSubfolderSpec = 0;
 			files = (
-				96FB729B1906B97100E8E06C /* plist.h in Copy Headers */,
+				96FB729B1906B97100E8E06C /* plist.h in Install Headers */,
 			);
-			name = "Copy Headers";
-			runOnlyForDeploymentPostprocessing = 0;
+			name = "Install Headers";
+			runOnlyForDeploymentPostprocessing = 1;
 		};
-		96FB729C1906B99B00E8E06C /* Copy Headers */ = {
+		96FB729C1906B99B00E8E06C /* Install Headers */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = include/plist;
-			dstSubfolderSpec = 16;
+			buildActionMask = 8;
+			dstPath = /usr/local/include/plist;
+			dstSubfolderSpec = 0;
 			files = (
-				96FB729D1906B9BF00E8E06C /* plist.h in Copy Headers */,
-				96FB729E1906B9BF00E8E06C /* plist++.h in Copy Headers */,
-				96FB729F1906B9BF00E8E06C /* Array.h in Copy Headers */,
-				96FB72A01906B9BF00E8E06C /* Boolean.h in Copy Headers */,
-				96FB72A11906B9BF00E8E06C /* Data.h in Copy Headers */,
-				96FB72A21906B9BF00E8E06C /* Date.h in Copy Headers */,
-				96FB72A31906B9BF00E8E06C /* Dictionary.h in Copy Headers */,
-				96FB72A41906B9BF00E8E06C /* Integer.h in Copy Headers */,
-				96FB72A51906B9BF00E8E06C /* Key.h in Copy Headers */,
-				96FB72A61906B9BF00E8E06C /* Node.h in Copy Headers */,
-				96FB72A71906B9BF00E8E06C /* Real.h in Copy Headers */,
-				96FB72A81906B9BF00E8E06C /* String.h in Copy Headers */,
-				96FB72A91906B9BF00E8E06C /* Structure.h in Copy Headers */,
-				96FB72AA1906B9BF00E8E06C /* Uid.h in Copy Headers */,
+				96FB729D1906B9BF00E8E06C /* plist.h in Install Headers */,
+				96FB729E1906B9BF00E8E06C /* plist++.h in Install Headers */,
+				96FB729F1906B9BF00E8E06C /* Array.h in Install Headers */,
+				96FB72A01906B9BF00E8E06C /* Boolean.h in Install Headers */,
+				96FB72A11906B9BF00E8E06C /* Data.h in Install Headers */,
+				96FB72A21906B9BF00E8E06C /* Date.h in Install Headers */,
+				96FB72A31906B9BF00E8E06C /* Dictionary.h in Install Headers */,
+				96FB72A41906B9BF00E8E06C /* Integer.h in Install Headers */,
+				96FB72A51906B9BF00E8E06C /* Key.h in Install Headers */,
+				96FB72A61906B9BF00E8E06C /* Node.h in Install Headers */,
+				96FB72A71906B9BF00E8E06C /* Real.h in Install Headers */,
+				96FB72A81906B9BF00E8E06C /* String.h in Install Headers */,
+				96FB72A91906B9BF00E8E06C /* Structure.h in Install Headers */,
+				96FB72AA1906B9BF00E8E06C /* Uid.h in Install Headers */,
 			);
-			name = "Copy Headers";
-			runOnlyForDeploymentPostprocessing = 0;
+			name = "Install Headers";
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -421,7 +421,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9602A1F718C1F388002FD8C5 /* Build configuration list for PBXNativeTarget "libplist++-dylib" */;
 			buildPhases = (
-				96FB729C1906B99B00E8E06C /* Copy Headers */,
+				96FB729C1906B99B00E8E06C /* Install Headers */,
 				9602A1E818C1F388002FD8C5 /* Sources */,
 				9602A1F518C1F388002FD8C5 /* Frameworks */,
 			);
@@ -455,7 +455,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 964945B918BD08A000EDE08B /* Build configuration list for PBXNativeTarget "libplist-dylib" */;
 			buildPhases = (
-				96FB729A1906B94F00E8E06C /* Copy Headers */,
+				96FB729A1906B94F00E8E06C /* Install Headers */,
 				964945AC18BD08A000EDE08B /* Sources */,
 				964945B818BD08A000EDE08B /* Frameworks */,
 			);
@@ -615,8 +615,6 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -637,10 +635,8 @@
 					"$(SRCROOT)/include",
 					/usr/include/libxml2,
 				);
-				ONLY_ACTIVE_ARCH = YES;
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/plist;
 				PRODUCT_NAME = "plist++";
-				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -660,9 +656,6 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -679,7 +672,6 @@
 				);
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/plist;
 				PRODUCT_NAME = "plist++";
-				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -699,17 +691,12 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
 				EXECUTABLE_EXTENSION = dylib;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1 ";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -724,10 +711,8 @@
 				);
 				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PREFIX)$(PRODUCT_NAME).$(EXECUTABLE_EXTENSION)";
 				MACH_O_TYPE = mh_dylib;
-				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "plist++";
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/plist;
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -746,13 +731,11 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				EXECUTABLE_EXTENSION = dylib;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1 ";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -768,13 +751,15 @@
 				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = "plist++";
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/plist;
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 		9649456618BCF13E00EDE08B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1.11;
 				DYLIB_CURRENT_VERSION = 1.11;
 				HEADER_SEARCH_PATHS = (
@@ -792,6 +777,9 @@
 		9649456718BCF13E00EDE08B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1.11;
 				DYLIB_CURRENT_VERSION = 1.11;
 				HEADER_SEARCH_PATHS = (
@@ -820,8 +808,6 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -837,10 +823,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/plist;
 				PRODUCT_NAME = plist;
-				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -860,9 +844,6 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -874,7 +855,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/plist;
 				PRODUCT_NAME = plist;
-				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -894,8 +874,6 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
 				EXECUTABLE_EXTENSION = dylib;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -914,10 +892,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_NAME)";
 				MACH_O_TYPE = mh_dylib;
-				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = plist;
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/plist;
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -936,9 +912,6 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				EXECUTABLE_EXTENSION = dylib;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -953,7 +926,6 @@
 				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = plist;
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/plist;
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
