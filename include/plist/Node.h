@@ -40,6 +40,8 @@ public :
 
     static Node* FromPlist(plist_t node, Node* parent = NULL);
 
+	virtual void Print();
+
 protected:
     Node(Node* parent = NULL);
     Node(plist_t node, Node* parent = NULL);

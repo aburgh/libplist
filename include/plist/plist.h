@@ -81,6 +81,7 @@ extern "C"
 
 #include <sys/types.h>
 #include <stdarg.h>
+#include <stdio.h>
 
     /**
      * \mainpage libplist : A library to handle Apple Property Lists
@@ -609,6 +610,14 @@ extern "C"
      */
     PLIST_API void plist_from_bin(const char *plist_bin, uint32_t length, plist_t * plist);
 
+	/**
+	 * Print the plist structure to an ASCII key/value format.
+	 * (This is similar or equal to the deprecated NeXT ASCII Property List Format.)
+	 *
+	 * @param plist the root node to print.
+	 * @param stream the stream on which to output.
+	 */
+	PLIST_API void plist_print_to_stream(plist_t plist, FILE* stream);
 
     /********************************************
      *                                          *

@@ -96,6 +96,10 @@
 		9686308E18F7105500C0363C /* String.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22918C1F85F002FD8C5 /* String.h */; };
 		9686308F18F7105500C0363C /* Structure.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22A18C1F85F002FD8C5 /* Structure.h */; };
 		9686309018F7105500C0363C /* Uid.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 9602A22B18C1F85F002FD8C5 /* Uid.h */; };
+		96D472E719AB793400A1B492 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 96D472E619AB793400A1B492 /* print.c */; };
+		96D472E819AB793400A1B492 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 96D472E619AB793400A1B492 /* print.c */; };
+		96D472E919AB793400A1B492 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 96D472E619AB793400A1B492 /* print.c */; };
+		96D472EA19AB793400A1B492 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 96D472E619AB793400A1B492 /* print.c */; };
 		96FB729B1906B97100E8E06C /* plist.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 96519CF518BD2EA0009DEBFD /* plist.h */; };
 		96FB729D1906B9BF00E8E06C /* plist.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 96519CF518BD2EA0009DEBFD /* plist.h */; };
 		96FB729E1906B9BF00E8E06C /* plist++.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 9602A22718C1F85F002FD8C5 /* plist++.h */; };
@@ -243,6 +247,7 @@
 		964945BD18BD0C5700EDE08B /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		964945BF18BD0CBE00EDE08B /* list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = list.c; path = libcnary/list.c; sourceTree = "<group>"; };
 		96519CF518BD2EA0009DEBFD /* plist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = plist.h; path = include/plist/plist.h; sourceTree = "<group>"; };
+		96D472E619AB793400A1B492 /* print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = print.c; path = src/print.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,6 +327,7 @@
 				9649457718BCF1DA00EDE08B /* plist.c */,
 				9649457818BCF1DA00EDE08B /* ptrarray.c */,
 				9649457918BCF1DA00EDE08B /* xplist.c */,
+				96D472E619AB793400A1B492 /* print.c */,
 				9602A1FB18C1F5BA002FD8C5 /* Array.cpp */,
 				9602A1FC18C1F5BA002FD8C5 /* Boolean.cpp */,
 				9602A1FD18C1F5BA002FD8C5 /* Data.cpp */,
@@ -525,6 +531,7 @@
 				9602A21518C1F5BA002FD8C5 /* Node.cpp in Sources */,
 				9602A20718C1F5BA002FD8C5 /* Array.cpp in Sources */,
 				9602A20F18C1F5BA002FD8C5 /* Dictionary.cpp in Sources */,
+				96D472E919AB793400A1B492 /* print.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +563,7 @@
 				9602A21618C1F5BA002FD8C5 /* Node.cpp in Sources */,
 				9602A20818C1F5BA002FD8C5 /* Array.cpp in Sources */,
 				9602A21018C1F5BA002FD8C5 /* Dictionary.cpp in Sources */,
+				96D472EA19AB793400A1B492 /* print.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +571,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96D472E719AB793400A1B492 /* print.c in Sources */,
 				9649457F18BCF1DA00EDE08B /* ptrarray.c in Sources */,
 				9649459518BCF24400EDE08B /* node_iterator.c in Sources */,
 				9649457D18BCF1DA00EDE08B /* hashtable.c in Sources */,
@@ -582,6 +591,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96D472E819AB793400A1B492 /* print.c in Sources */,
 				964945AD18BD08A000EDE08B /* ptrarray.c in Sources */,
 				964945AE18BD08A000EDE08B /* node_iterator.c in Sources */,
 				964945AF18BD08A000EDE08B /* hashtable.c in Sources */,
