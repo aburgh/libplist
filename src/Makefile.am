@@ -12,6 +12,7 @@ libplist_la_SOURCES = base64.c base64.h \
 		      ptrarray.c ptrarray.h \
 		      xplist.c \
 		      bplist.c \
+			  print.c \
 		      plist.c plist.h \
 		      common.h
 
