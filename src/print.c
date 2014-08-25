@@ -196,7 +196,7 @@ static void plist_node_print_to_stream(plist_t node, int* indent_level, FILE* st
 	}
 }
 
-void plist_print_to_stream(plist_t plist, FILE* stream)
+void plist_print_ascii_to_stream(plist_t plist, FILE* stream)
 {
 	int indent = 0;
 

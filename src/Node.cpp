@@ -160,6 +160,6 @@ Node* Node::FromPlist(plist_t node, Node* parent)
 
 void Node::Print()
 {
-	plist_print_to_stream(GetPlist(), stdout);
+	plist_print_ascii_to_stream(GetPlist(), stdout);
 }
 };

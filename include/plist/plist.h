@@ -617,7 +617,7 @@ extern "C"
 	 * @param plist the root node to print.
 	 * @param stream the stream on which to output.
 	 */
-	PLIST_API void plist_print_to_stream(plist_t plist, FILE* stream);
+	PLIST_API void plist_print_ascii_to_stream(plist_t plist, FILE* stream);
 
     /********************************************
      *                                          *
