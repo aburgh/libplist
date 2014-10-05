@@ -228,7 +228,6 @@
 		9649457918BCF1DA00EDE08B /* xplist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = xplist.c; path = src/xplist.c; sourceTree = "<group>"; };
 		9649458118BCF20400EDE08B /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base64.h; path = src/base64.h; sourceTree = "<group>"; };
 		9649458218BCF20400EDE08B /* bytearray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bytearray.h; path = src/bytearray.h; sourceTree = "<group>"; };
-		9649458318BCF20400EDE08B /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = src/common.h; sourceTree = "<group>"; };
 		9649458418BCF20400EDE08B /* hashtable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hashtable.h; path = src/hashtable.h; sourceTree = "<group>"; };
 		9649458518BCF20400EDE08B /* plist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = plist.h; path = src/plist.h; sourceTree = "<group>"; };
 		9649458618BCF20400EDE08B /* ptrarray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ptrarray.h; path = src/ptrarray.h; sourceTree = "<group>"; };
@@ -307,7 +306,6 @@
 			isa = PBXGroup;
 			children = (
 				96519CF418BD2E81009DEBFD /* plist */,
-				9649458318BCF20400EDE08B /* common.h */,
 				9649458118BCF20400EDE08B /* base64.h */,
 				9649458218BCF20400EDE08B /* bytearray.h */,
 				9649458418BCF20400EDE08B /* hashtable.h */,
@@ -771,7 +769,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1.11;
-				DYLIB_CURRENT_VERSION = 1.11;
+				DYLIB_CURRENT_VERSION = 1.12;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/include",
 					"$(SRCROOT)/libcnary/include",
@@ -791,7 +789,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1.11;
-				DYLIB_CURRENT_VERSION = 1.11;
+				DYLIB_CURRENT_VERSION = 1.12;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/include",
 					"$(SRCROOT)/libcnary/include",
