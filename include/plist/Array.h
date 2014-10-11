@@ -46,6 +46,40 @@ public :
     void Remove(unsigned int pos);
     unsigned int GetNodeIndex(Node* node) const;
 
+	/* Iterators */
+
+	std::vector<Node*>::iterator begin() noexcept {
+		return _array.begin();
+	}
+
+	std::vector<Node*>::iterator end() noexcept {
+		return _array.end();
+	}
+
+	std::vector<Node*>::const_iterator cbegin() const noexcept {
+		return _array.cbegin();
+	}
+
+	std::vector<Node*>::const_iterator cend() const noexcept {
+		return _array.cend();
+	}
+
+	std::vector<Node*>::reverse_iterator rbegin() noexcept {
+		return _array.rbegin();
+	}
+
+	std::vector<Node*>::reverse_iterator rend() noexcept {
+		return _array.rend();
+	}
+
+	std::vector<Node*>::const_reverse_iterator crbegin() const noexcept {
+		return _array.crbegin();
+	}
+
+	std::vector<Node*>::const_reverse_iterator crend() const noexcept {
+		return _array.crend();
+	}
+
 private :
     std::vector<Node*> _array;
 };
