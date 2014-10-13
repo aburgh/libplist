@@ -40,7 +40,10 @@ public :
 
     Node* Clone() const;
 
-    typedef std::map<std::string,Node*>::iterator iterator;
+	using iterator = std::map<std::string,Node*>::iterator;
+	using const_iterator = std::map<std::string,Node*>::const_iterator;
+	using reverse_iterator = std::map<std::string,Node*>::reverse_iterator;
+	using const_reverse_iterator = std::map<std::string,Node*>::const_reverse_iterator;
 
     Node* operator[](const std::string& key);
     iterator Begin();
@@ -52,6 +55,40 @@ public :
     void Remove(Node* node);
     void Remove(const std::string& key);
     std::string GetNodeKey(Node* key);
+
+	/* Iterators */
+
+	iterator begin() noexcept {
+		return _map.begin();
+	}
+
+	iterator end() noexcept {
+		return _map.end();
+	}
+
+	const_iterator cbegin() const noexcept {
+		return _map.cbegin();
+	}
+
+	const_iterator cend() const noexcept {
+		return _map.cend();
+	}
+
+	reverse_iterator rbegin() noexcept {
+		return _map.rbegin();
+	}
+
+	reverse_iterator rend() noexcept {
+		return _map.rend();
+	}
+
+	const_reverse_iterator crbegin() const noexcept {
+		return _map.crbegin();
+	}
+
+	const_reverse_iterator crend() const noexcept {
+		return _map.crend();
+	}
 
 private :
     std::map<std::string,Node*> _map;
