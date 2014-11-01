@@ -2,8 +2,8 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.61)
-AC_INIT(libplist, 1.12, nospam@nowhere.com)
-AM_INIT_AUTOMAKE([dist-bzip2 no-dist-gzip])
+AC_INIT(libplist, 1.13, nospam@nowhere.com)
+AM_INIT_AUTOMAKE([dist-bzip2 no-dist-gzip check-news])
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES])
 AC_CONFIG_SRCDIR([src/])
 AC_CONFIG_HEADERS([config.h])
@@ -15,7 +15,7 @@ dnl libtool versioning
 #                 changes to the signature and the semantic)
 #  ? :+1 : ?   == just internal changes
 # CURRENT : REVISION : AGE
-LIBPLIST_SO_VERSION=2:1:0
+LIBPLIST_SO_VERSION=3:0:0
 
 AC_SUBST(LIBPLIST_SO_VERSION)
 
@@ -27,6 +27,16 @@ AC_SUBST(LIBXML2_VERSION)
 # Checks for programs.
 AC_PROG_CC
 AC_PROG_CXX
+
+# AC_PROG_CXX will return "g++" even if no c++ compiler is installed
+AC_LANG_PUSH([C++])
+AC_MSG_CHECKING([whether $CXX is available and compiles a program])
+AC_COMPILE_IFELSE([AC_LANG_PROGRAM([],[])],
+                  [AC_MSG_RESULT([yes])],
+                  [AC_MSG_RESULT([no])
+                   AC_MSG_ERROR([C++ compiler not available or unable to compile])])
+AC_LANG_POP
+
 AM_PROG_CC_C_O
 AC_PROG_LIBTOOL
 
