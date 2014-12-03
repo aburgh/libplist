@@ -20,6 +20,7 @@
 #include <string.h>
 #include <time.h>
 #include <plist/plist.h>
+#include "plist.h"
 
 
 static const char base64_str[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
@@ -196,7 +197,7 @@ static void plist_node_print_to_stream(plist_t node, int* indent_level, FILE* st
 	}
 }
 
-void plist_print_ascii_to_stream(plist_t plist, FILE* stream)
+PLIST_API void plist_print_ascii_to_stream(plist_t plist, FILE* stream)
 {
 	int indent = 0;
 
